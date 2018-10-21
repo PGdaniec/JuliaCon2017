@@ -14,7 +14,7 @@ function spikingnet(n,nspike,k,j0,ratewnt,tau,seedic,seedtopo)
     w        = 1 /log(1. + 1/iext)
     c        = j0/sqrt(k)/(1. + iext) # phase velocity LIF
     phith    = 1.
-    phishift = 0 .# threshold for LIF
+    phishift = 0. # threshold for LIF
     # init. random number generator (Xorshift)
     r = Xoroshiro128Star(seedic)
     #generate heap
